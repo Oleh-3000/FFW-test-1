@@ -10,12 +10,12 @@ navItems.forEach( el => {
 		}
 		el.classList.add('active');
 		
-		setTAbContentToActive(tabContentItems, el.dataset.target);
+		setTabContentToActive(tabContentItems, el.dataset.target);
 	});
 });
 
 
-function setTAbContentToActive(arr, id) {
+function setTabContentToActive(arr, id) {
 	arr.forEach( el => {
 		if  (el.id === id) {
 			el.classList.add('active');
