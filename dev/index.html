@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div class="tab-block">
+	<div class="tab-block__header">
+		<h2 class="tab-block__title">Please select one font</h2>
+		<ul class="tab-block__nav">
+			<li><a href="javascript:void(0);" data-target="myFonts" class="nav-item">My Fonts</a></li>
+			<li><a href="javascript:void(0);" data-target="buyFonts" class="nav-item active">Buy Fonts</a></li>
+		</ul>
+	</div>
+	<div class="tab-content">
+		<div id="myFonts" class="tab-content__item">
+			<p>myFonts</p>
+		</div>
+		<div id="buyFonts" class="tab-content__item active">
+			<div class="left-side">
+				<label for="radio1" class="font-wrap">
+					<input type="radio" name="font" id="radio1">
+					<div class="font-block big">
+						<div class="font-block__poster green-bg">
+							<div class="poster-icon">M</div>
+						</div>
+						<div class="font-block__text">
+							Merriweather project is led by Sorkin Type
+						</div>
+					</div>
+				</label>
+				
+			</div>
+			<div class="right-side">
+				<label for="radio2" class="font-wrap">
+					<input type="radio" name="font" id="radio2">
+					<div class="font-block">
+						<div class="font-block__poster pink-bg">
+							<div class="poster-icon">R</div>
+						</div>
+						<div class="font-block__text">
+							Roboto doesn't compromise, allowing letters
+						</div>
+					</div>
+				</label>
+				<label for="radio3" class="font-wrap">
+					<input type="radio" name="font" id="radio3">
+					<div class="font-block">
+						<div class="font-block__poster blue-bg">
+							<div class="poster-icon">NS</div>
+						</div>
+						<div class="font-block__text">
+							Noto Sans covers over 30 scripts
+						</div>
+					</div>
+				</label>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
