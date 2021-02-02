@@ -29,7 +29,7 @@ function setTabContentToActive(arr, id) {
 
 function parseUlt(url) {
 	let strObj = {};
-	let preffixUrl = ["http://","https://","http://www.","https://www."];
+	let preffixUrl = ["http://","https://"];
 	let suffixHostName = ['.ua', '.ru', '.com'];
 	
 	preffixUrl.forEach(el => {
@@ -54,5 +54,18 @@ function parseUlt(url) {
 	
 	return strObj;
 }
-let testUrl = parseUlt('http://ffwagency.com/about-ffw/your-digital-solutions-partner?a=1#test');
-console.log(testUrl)
+let testUrl = parseUlt('http://www.ffwagency.com/about-ffw/your-digital-solutions-partner?a=1#test');
+console.log('parseUlt', testUrl);
+
+function parseUlt2(url) {
+	let testUrl = new URL(url);
+	let obj = {}
+	obj.hash = testUrl.hash;
+	obj.pathname = testUrl.pathname;
+	obj.hostname = testUrl.hostname;
+	
+	return obj;
+}
+
+let testUrl2 = parseUlt2('http://www.ffwagency.com/about-ffw/your-digital-solutions-partner?a=1#test');
+console.log('parseUlt2', testUrl2);
