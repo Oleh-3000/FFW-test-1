@@ -58,13 +58,7 @@ let testUrl = parseUlt('http://www.ffwagency.com/about-ffw/your-digital-solution
 console.log('parseUlt', testUrl);
 
 function parseUlt2(url) {
-	let testUrl = new URL(url);
-	let obj = {}
-	obj.hash = testUrl.hash;
-	obj.pathname = testUrl.pathname;
-	obj.hostname = testUrl.hostname;
-	
-	return obj;
+	return  new URL(url);
 }
 
 let testUrl2 = parseUlt2('http://www.ffwagency.com/about-ffw/your-digital-solutions-partner?a=1#test');
